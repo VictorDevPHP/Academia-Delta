@@ -313,80 +313,84 @@ return [
         ],
         
         [
-            'text'        => 'pages',
-            'url'         => 'pages',
+            'text'        => 'Painel de Controle',
+            'url'         => 'painelControle',
             'icon'        => 'far fa-fw fa-file',
             'label_color' => 'success',
+            'can'         => 'is_admin',
         ],
 
-        ['header' => 'account_settings'],
+        // ['header' => 'account_settings'],
 
 
-        [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
-        ],
+        // [
+        //     'text' => 'profile',
+        //     'url'  => 'admin/settings',
+        //     'icon' => 'fas fa-fw fa-user',
+        // ],
 
+        // [
+        //     'text' => 'change_password',
+        //     'url'  => 'admin/settings',
+        //     'icon' => 'fas fa-fw fa-lock',
+        // ],
         [
-            'text' => 'change_password',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
-        ],
-        [
-            'text'    => 'multilevel',
-            'icon'    => 'fas fa-fw fa-share',
+            'text'    => 'Cursos',
+            'icon'    => 'fas fa-graduation-cap',
             'submenu' => [
                 [
-                    'text' => 'level_one',
-                    'url'  => '#',
+                    'text' => 'Matematica',
+                    'url'  => '/nav/matematica',
+                    'icon'    => 'fas fa-calculator',
                 ],
                 [
-                    'text'    => 'level_one',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'level_two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
+                    'text'    => 'Quimica',
+                    'url'     => 'nav/quimica',
+                    'icon'    => 'fas fa-microscope',
+                    // 'submenu' => [
+                    //     [
+                    //         'text' => 'Quimica',
+                    //         'url'  => '#',
+                    //     ],
+                    //     [
+                    //         'text'    => 'Fisica',
+                    //         'url'     => '#',
+                    //         'submenu' => [
+                    //             [
+                    //                 'text' => 'Level teste',
+                    //                 'url'  => '#',
+                    //             ],
+                    //             [
+                    //                 'text' => 'Fisica',
+                    //                 'url'  => '#',
+                    //             ],
+                    //         ],
+                    //     ],
+                    // ],
                 ],
                 [
-                    'text' => 'level_one',
-                    'url'  => '#',
+                    'text' => 'Fisica',
+                    'url'  => 'nav/fisica',
+                    'icon'    => 'fas fa-atom',
                 ],
             ],
         ],
-        ['header' => 'labels'],
+        ['header' => 'Status da Conta'],
         [
-            'text'       => 'important',
+            'text'       => 'Ativo',
+            'icon_color' => 'green',
+            'url'        => '#',
+        ],
+        [
+            'text'       => 'Inativo',
             'icon_color' => 'red',
             'url'        => '#',
         ],
-        [
-            'text'       => 'warning',
-            'icon_color' => 'yellow',
-            'url'        => '#',
-        ],
-        [
-            'text'       => 'information',
-            'icon_color' => 'cyan',
-            'url'        => '#',
-        ],
+        // [
+        //     'text'       => 'information',
+        //     'icon_color' => 'cyan',
+        //     'url'        => '#',
+        // ],
     ],
 
     /*

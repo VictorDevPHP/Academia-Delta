@@ -22,7 +22,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'status_conta',
+        'status_conta', //Define o produto ativo na conta do usuario (Enem, militar, os dois ou inativo)
     ];
 
     /**

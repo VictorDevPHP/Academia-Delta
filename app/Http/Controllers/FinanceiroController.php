@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class FinanceiroController extends Controller
 {
     public function index()
     {
-        return view('nav.financeiro')->extends('home'); 
+        $quantidadeClientes = User::count();
+        return view('nav.financeiro', ['quantidadeClientes' => $quantidadeClientes]);
     }
 }

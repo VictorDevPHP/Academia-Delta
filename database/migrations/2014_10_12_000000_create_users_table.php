@@ -22,7 +22,7 @@ return new class extends Migration
         // });
 
         // Schema::table('users', function (Blueprint $table) {
-        //     $table->string('status_conta')->default('inativo')->nullable(false);
+        //     $table->string('status_conta')->default('inativo')->nullable(false); //Define o status "Inativo" como default ao criar a conta.
         // });
 
         Schema::table('users', function (Blueprint $table) {

@@ -317,7 +317,7 @@ return [
             'url'         => 'painelControle',
             'icon'        => 'far fa-fw fa-file',
             'label_color' => 'success',
-            'can'         => 'is_admin',
+            'can'         => 'admin',
         ],
 
         // ['header' => 'account_settings'],

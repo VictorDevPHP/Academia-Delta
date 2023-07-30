@@ -16,6 +16,7 @@ Route::middleware('auth')->group(function () {
     Route::get('nav/matematica', [MatematicaController::class, 'index']);
     Route::get('nav/quimica', [QuimicaController::class, 'index']);
     Route::get('nav/fisica', [FisicaController::class, 'index']);
+
     Route::get('/painelControle', function () {
         return view('painelControle');
     });

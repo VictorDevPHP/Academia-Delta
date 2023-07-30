@@ -375,6 +375,12 @@ return [
                 ],
             ],
         ],
+        [
+            'text'        => 'Financeiro',
+            'url'         => 'nav/financeiro',
+            'icon'        => 'fas fa-cash-register',
+            'label_color' => 'success',
+        ],
         ['header' => 'Status da Conta'],
         [
             'text'       => 'Ativo',

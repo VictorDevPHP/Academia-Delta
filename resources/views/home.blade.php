@@ -1,5 +1,8 @@
 @extends('adminlte::page', ['iFrameEnabled' => true])
 
+<head>
+
+</head>
 
 @section('title', 'Dashboard')
 
@@ -16,5 +19,7 @@
 @stop
 
 @section('js')
-    <script> console.log('Hi!'); </script>
+    <script>
+        console.log('Hi!');
+    </script>
 @stop

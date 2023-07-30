@@ -10,6 +10,6 @@ class FisicaController extends Controller
 
         $users = User::all();
 
-        return view('nav.fisica'); 
+        return view('nav.fisica')->with('users', $users); 
     }
 }
